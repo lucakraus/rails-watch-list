@@ -10,3 +10,43 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+body {
+  background-color: #E96479;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 20px auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.headline {
+  h4 {
+    color: white;
+    font-weight: bold;
+  }
+  display:flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+#button {
+  background-color: #7DB9B6;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+    a {
+      color: white;
+    }
+  color: white;
+
+}
+
+#button:hover {
+  background: rgba(0, 0, 0, 0.2);
+}

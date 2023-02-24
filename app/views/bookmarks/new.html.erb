@@ -1,0 +1,11 @@
+<%= render "navbar" %>
+<div class="container">
+<div id="form">
+<%= simple_form_for [@list, @bookmark] do |f| %>
+  <%= f.input :comment %>
+  <%= f.association :movie %>
+  <%= f.submit "Add movie", id: "button" %>
+<% end %>
+</div>
+</div>
+<%# <%= link_to "Back to the list", list_path %>

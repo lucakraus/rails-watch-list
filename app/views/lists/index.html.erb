@@ -1,0 +1,23 @@
+<%= render "navbar" %>
+<%= render "banner" %>
+<div class="container">
+<div class="headline">
+ <h4>Your Lists</h4>
+ <button id="button"><%= link_to "Create new list", new_list_path %></button>
+</div>
+<div id="card-lists">
+  <% @lists.each do |list| %>
+  <%= link_to list_path(list) do%>
+  <div class="card-trip">
+      <img src="https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1456&q=80" />
+     <div class="card-trip-infos">
+        <h5>
+        <strong><%= list.name %></strong>
+       </h5>
+    </div>
+  </div>
+  <% end %>
+  <% end %>
+</div>
+
+ </div>

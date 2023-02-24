@@ -1,0 +1,18 @@
+<%# <%= render "navbar" %>
+
+<%# <h1>New list</h1> %>
+
+<%# <%= render "form", list: @list %>
+
+<%# <div>
+  <%= link_to "Back to restaurants", restaurants_path %>
+<%# </div> %>
+<%= render "navbar" %>
+<div class="container">
+<div id="form">
+<%= simple_form_for [@list] do |f| %>
+  <%= f.input :name %>
+  <%= f.submit "Create list", id: "button" %>
+<% end %>
+</div>
+</div>
