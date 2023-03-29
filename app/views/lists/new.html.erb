@@ -12,7 +12,9 @@
 <div id="form">
 <%= simple_form_for [@list] do |f| %>
   <%= f.input :name %>
+  <%=f.input :photo, as: :file %>
   <%= f.submit "Create list", id: "button" %>
+
 <% end %>
 </div>
 </div>
